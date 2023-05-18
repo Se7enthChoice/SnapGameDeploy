@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Snap Game</title>
+  <link rel="stylesheet" href="/styles.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="index.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+<div id="container" class = "container">
+      <button id="create-game-btn" class="create-game" onclick="createGame()">Create Game</button>
+      <button id="join-game-btn" class="join-game" onclick="joinGame()">Join Game</button>
+
+      <div class="join-game-ui" id="join-game-ui">
+        <label for="game-id-input">Enter Game ID to Join Game:</label>
+        <input type="text" id="game-id-input">
+      </div>
+  </div>
+
+  <div class="card" id="last-card">
+    <div class="number" id="cardNumber"></div>
+    <div class="suit" id="cardSuit"></div>
+  </div>
+
+  <div id="game-id-display"></div>
+    <div id="snap-ui">
+      <button id="draw-btn" onclick="drawFunction()" disabled>Draw</button>
+      <button id="snap-btn" onclick="snapFunction()" disabled>Snap</button>
+    </div>
+    <div id="game-container"></div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+#snap-ui {
+    margin: auto;
+    width: 15%;
+    border: 3px solid white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: -50px;
+    display: none;
+  }
+
+#game-container {
+  margin: auto;
+  width: 50%;
+  border: 3px solid white;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  bottom: -80px;
+  display: none;
+  color: white;
+  background-color: rgb(51, 49, 49);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#game-id-display {
+    display: block;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: -100px;
+    padding-top: 100px;
+    font-size: xx-large;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #004440;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+	color: white;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+}
+
+.create-game, .join-game {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.join-game-ui{
+    display: block;
+    position: relative;
+    bottom: -50px;
+    color: white;
+}
+
+.create-game:hover, .join-game:hover {
+    background-color: #3e8e41;
+}
+
+#last-card {
+    background-color: white;
+    width: 150px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    float: left;
+    display: none;
+  }
+  
+  #last-card .number, .suit {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  
+  #last-card .number {
+    font-size: 24px;
+  }
+  
+  #last-card .suit {
+    font-size: 50px;
+    left: 40%;
+    top: 100px;
+  }
+
+@media screen and (max-width: 480px) {
+    .options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .create-game, .join-game {
+        margin-bottom: 20px;
+    }
+}
